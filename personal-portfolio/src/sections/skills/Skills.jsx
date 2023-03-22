@@ -4,7 +4,7 @@ export default function Skills() {
     return(
         <section id="skills">
             <h2>Techincal Profile</h2>
-            <div className="row">
+            <div id='skills-row' className="row">
                 <div className="col">
                     <h3>Languages</h3>
                     <p>Javascript</p>

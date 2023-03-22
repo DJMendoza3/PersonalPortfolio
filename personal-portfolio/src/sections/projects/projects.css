@@ -3,6 +3,14 @@
     margin: 0 auto;
     padding: 50px 0;
 }
+#projects h2 {
+    font-size: 3rem;
+    font-weight: 700;
+    text-align: center;
+}
+.project {
+    gap: 40px;
+}
 .project-text {
     flex: 1;
 }

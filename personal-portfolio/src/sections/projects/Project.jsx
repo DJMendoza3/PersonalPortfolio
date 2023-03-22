@@ -13,7 +13,14 @@ export default function Project({
             <div className='project-text'>
                 <h3>{title}</h3>
                 <p>{description}</p>
-                <p>{stack}</p>
+                <p>frontent</p>
+                {stack.frontend.map((tech, i) => <p key={i}>{tech}</p>)}
+                <p>backend</p>
+                {stack.backend.map((tech, i) => <p key={i}>{tech}</p>)}
+                <p>testing</p>
+                {stack.testing.map((tech, i) => <p key={i}>{tech}</p>)}
+                <p>deployment</p>
+                {stack.deployment.map((tech, i) => <p key={i}>{tech}</p>)}
                 <div className='project-links'>
 
                 </div>

@@ -1,5 +1,8 @@
 #skills{
     background-color: #2a2a2a;
-    padding: 50px 0;
+    padding: 50px 100px;
     color: #F1F0EA;
+}
+#skills-row {
+    justify-content: space-around;
 }

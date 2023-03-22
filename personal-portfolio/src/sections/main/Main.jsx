@@ -7,7 +7,7 @@ export default function Main() {
         <section id="main" className='row'>
                 <div id='main-text' className="col">
                     <h1>Daniel Mendoza,</h1>
-                    <p>An application developer specialized in creating modern responsive web applications using the React framework.</p>
+                    <p>Application developer specialized in creating modern responsive web applications using the React framework.</p>
                 </div>
                 <div id='main-text-img' className="col">
                     <img src={banner_text} alt="" />
