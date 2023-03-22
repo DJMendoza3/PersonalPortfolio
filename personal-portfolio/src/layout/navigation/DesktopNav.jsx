@@ -12,12 +12,19 @@ export default function DesktopNav() {
     useEffect(() => {
         const desktopNav = document.getElementById('desktop-nav');
         const main = document.getElementById('main');
+        const buttons = desktopNav.getElementsByTagName('button');
 
         function handleScroll() {
             if (window.scrollY > 0) {
                 desktopNav.style.backgroundColor = '#2a2a2a';
+                for (let i = 0; i < buttons.length; i++) {
+                    buttons[i].style.color = '#F1F0EA';
+                }
             } else {
                 desktopNav.style.backgroundColor = 'transparent';
+                for (let i = 0; i < buttons.length; i++) {
+                    buttons[i].style.color = '#2a2a2a';
+                }
             }
         }
 

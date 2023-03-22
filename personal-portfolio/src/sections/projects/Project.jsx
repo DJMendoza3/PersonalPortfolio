@@ -5,17 +5,16 @@ export default function Project({
     stack,
     github,
     live,
+    orientation
 }) {
     return(
-        <div className='project'>
-            <div className='project__image'>
-                <img src={image} alt={title} />
-            </div>
-            <div className='project__text'>
+        <div className='project row' style={{flexDirection: orientation === 'right' && 'row-reverse'}}>
+            <img src={image} alt={title} width='500px' height='500px'/>
+            <div className='project-text'>
                 <h3>{title}</h3>
                 <p>{description}</p>
                 <p>{stack}</p>
-                <div className='project__links'>
+                <div className='project-links'>
 
                 </div>
             </div>

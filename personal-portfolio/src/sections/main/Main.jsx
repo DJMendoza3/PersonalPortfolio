@@ -1,5 +1,7 @@
 import './main.css';
 
+import banner_text from 'assets/images/banner-text.png';
+
 export default function Main() {
     return(
         <section id="main" className='row'>
@@ -8,7 +10,7 @@ export default function Main() {
                     <p>An application developer specialized in creating modern responsive web applications using the React framework.</p>
                 </div>
                 <div id='main-text-img' className="col">
-                    <img src="" alt="" />
+                    <img src={banner_text} alt="" />
                 </div>
                 <div className="col">
                     <p>LinkedIn</p>

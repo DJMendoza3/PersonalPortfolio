@@ -1,5 +1,6 @@
 import { useContext } from "react";
 import { WindowContext } from "providers/WindowProvider";
+import './navigation.css';
 
 import DesktopNav from "./DesktopNav";
 import MobileNav from "./MobileNav";

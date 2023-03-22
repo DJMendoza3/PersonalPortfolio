@@ -1,6 +1,7 @@
 header {
     position: fixed;
     height: 50px;
+    width: 100%;
 }
 .row {
     display: flex;
