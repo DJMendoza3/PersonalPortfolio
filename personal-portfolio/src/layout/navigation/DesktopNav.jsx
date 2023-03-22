@@ -12,11 +12,10 @@ export default function DesktopNav() {
     useEffect(() => {
         const desktopNav = document.getElementById('desktop-nav');
         const main = document.getElementById('main');
-        const mainHeight = main.offsetHeight;
 
         function handleScroll() {
-            if (window.scrollY > mainHeight) {
-                desktopNav.style.backgroundColor = 'rgba(0, 0, 0, 0.8)';
+            if (window.scrollY > 0) {
+                desktopNav.style.backgroundColor = '#2a2a2a';
             } else {
                 desktopNav.style.backgroundColor = 'transparent';
             }

@@ -7,6 +7,7 @@ import Skills from "sections/skills/Skills";
 import Projects from "sections/projects/Projects";
 import About from "sections/about/About";
 import Contact from "sections/contact/Contact";
+import Footer from "layout/footer/Footer";
 
 export default function Container() {
     const { setDimensions } = useContext(WindowContext);
@@ -22,7 +23,7 @@ export default function Container() {
         window.addEventListener("resize", handleResize);
         return () => window.removeEventListener("resize", handleResize);
     }, [setDimensions]);
-    
+
     return(
         <>
             <Navigation />
@@ -31,6 +32,7 @@ export default function Container() {
             <Projects />
             <About />
             <Contact />
+            <Footer />
         </>
     );
 }

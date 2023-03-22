@@ -1,12 +1,13 @@
+import './main.css';
+
 export default function Main() {
     return(
-        <section id="main">
-            <div className="row">
-                <div className="col">
+        <section id="main" className='row'>
+                <div id='main-text' className="col">
                     <h1>Daniel Mendoza,</h1>
                     <p>An application developer specialized in creating modern responsive web applications using the React framework.</p>
                 </div>
-                <div className="col">
+                <div id='main-text-img' className="col">
                     <img src="" alt="" />
                 </div>
                 <div className="col">
@@ -14,7 +15,6 @@ export default function Main() {
                     <p>GitHub</p>
                     <p>Resume</p>
                 </div>
-            </div>
         </section>
     );
 }
