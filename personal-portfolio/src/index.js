@@ -1,6 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
+import 'utils/utils.css';
 import Container from 'layout/container/Container';
 import reportWebVitals from './reportWebVitals';
 import WindowProvider from 'providers/WindowProvider';
