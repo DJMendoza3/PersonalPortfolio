@@ -10,29 +10,31 @@ import Contact from "sections/contact/Contact";
 import Footer from "layout/footer/Footer";
 
 export default function Container() {
-    const { setDimensions } = useContext(WindowContext);
+  const { setDimensions } = useContext(WindowContext);
 
-    useEffect(() => {
-        function handleResize() {
-            setDimensions({
-                width: window.innerWidth,
-                height: window.innerHeight,
-            });
-        }
 
-        window.addEventListener("resize", handleResize);
-        return () => window.removeEventListener("resize", handleResize);
-    }, [setDimensions]);
 
-    return(
-        <>
-            <Navigation />
-            <Main />
-            <Skills />
-            <Projects />
-            <About />
-            <Contact />
-            <Footer />
-        </>
-    );
+  useEffect(() => {
+    function handleResize() {
+      setDimensions({
+        width: window.innerWidth,
+        height: window.innerHeight,
+      });
+    }
+
+    window.addEventListener("resize", handleResize);
+    return () => window.removeEventListener("resize", handleResize);
+  }, [setDimensions]);
+
+  return (
+    <>
+      <Navigation />
+      <Main />
+      <Skills />
+      <Projects />
+      <About />
+      <Contact />
+      <Footer />
+    </>
+  );
 }

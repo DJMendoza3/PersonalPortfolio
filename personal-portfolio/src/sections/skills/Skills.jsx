@@ -5,39 +5,39 @@ export default function Skills() {
         <section id="skills">
             <h2>Techincal Profile</h2>
             <div id='skills-row' className="row">
-                <div className="col">
+                <ul className="col">
                     <h3>Languages</h3>
-                    <p>Javascript</p>
-                    <p>HTML</p>
-                    <p>CSS</p>
-                    <p>Python</p>
-                </div>
-                <div className="col">
+                    <li>Javascript</li>
+                    <li>HTML</li>
+                    <li>CSS</li>
+                    <li>Python</li>
+                </ul>
+                <ul className="col">
                     <h3>Frameworks & Libraries</h3>
-                    <p>React.JS</p>
-                    <p>Redux</p>
-                    <p>React Router</p>
-                    <p>Jest</p>
-                    <p>React Testing Library</p>
-                    <p>MySQL</p>
-                    <p>Three.JS</p>
-                    <p>Flask</p>
-                </div>
-                <div className="col">
+                    <li>React.JS</li>
+                    <li>Redux</li>
+                    <li>React Router</li>
+                    <li>Jest</li>
+                    <li>React Testing Library</li>
+                    <li>MySQL</li>
+                    <li>Three.JS</li>
+                    <li>Flask</li>
+                </ul>
+                <ul className="col">
                     <h3>Project Management</h3>
-                    <p>Git</p>
-                    <p>Agile Development Cycle</p>
-                    <p>Time Management</p>
-                    <p>Detailed Oriented</p>
-                </div>
-                <div className="col">
+                    <li>Git</li>
+                    <li>Agile Development Cycle</li>
+                    <li>Time Management</li>
+                    <li>Detailed Oriented</li>
+                </ul>
+                <ul className="col">
                     <h3>Other</h3>
-                    <p>SEO</p>
-                    <p>Websockets</p>
-                    <p>Rest API</p>
-                    <p>CRUD</p>
-                    <p>Web Accessability</p>
-                </div>
+                    <li>SEO</li>
+                    <li>Websockets</li>
+                    <li>Rest API</li>
+                    <li>CRUD</li>
+                    <li>Web Accessability</li>
+                </ul>
             </div>
         </section>
     );

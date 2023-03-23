@@ -14,3 +14,10 @@
 .project-text {
     flex: 1;
 }
+.project img {
+    border: solid 6px #2a2a2a;
+    border-radius: 10px;
+}
+.project-stack {
+    justify-content: space-around;
+}

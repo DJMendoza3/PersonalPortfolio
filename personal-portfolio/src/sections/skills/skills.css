@@ -6,3 +6,6 @@
 #skills-row {
     justify-content: space-around;
 }
+#skills p {
+    list-style:;
+}

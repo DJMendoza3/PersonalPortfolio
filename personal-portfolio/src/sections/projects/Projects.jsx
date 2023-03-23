@@ -3,6 +3,7 @@ import './projects.css';
 import Project from './Project';
 
 import struggling_bums_site from 'assets/images/struggling-bums-site.gif';
+import genemesh from 'assets/images/genemesh.gif';
 
 export default function Projects() {
     return(
@@ -19,7 +20,7 @@ export default function Projects() {
             <Project 
                 title='Genemesh'
                 description='A web application that allows users to create and share genealogy trees. The application is built with React.JS and uses the Three.JS library for the background animation.'
-                image='https://i.imgur.com/4Z7ZQ0M.png'
+                image={genemesh}
                 stack={{frontend: ['React.JS', 'Flask', 'CSS'], backend: ['Three.JS', 'MySQL'], testing: ['Jest', 'React Testing Library'], deployment: ['Heroku', 'Netlify']}}
                 github='https://strugglingbums.com/'
                 orientation='right'

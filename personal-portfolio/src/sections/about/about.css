@@ -1,0 +1,8 @@
+#about {
+    background-color: #2a2a2a;
+    width: min(1400px, 100%);
+    margin: 0 auto;
+    min-height: 800px;
+    border-radius: 15px;
+    color: #F1F0EA;
+}
