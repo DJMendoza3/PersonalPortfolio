@@ -1,5 +1,6 @@
 import { useContext, useEffect } from "react";
 import { WindowContext } from "providers/WindowProvider";
+import mouseEffect from "utils/mouseEffect";
 
 import Navigation from "layout/navigation/Navigation";
 import Main from "sections/main/Main";
@@ -11,8 +12,19 @@ import Footer from "layout/footer/Footer";
 
 export default function Container() {
   const { setDimensions } = useContext(WindowContext);
+    const trail = document.getElementsByClassName('trail');
 
+    mouseEffect();
 
+    useEffect(() => {
+        
+        if(trail.length > 0) {
+            for(let i = 0; i < trail.length; i++) {
+                trail[i].style.width = `${20-i}px`;
+                trail[i].style.height = `${20-i}px`;
+            }
+        }
+    }, [trail]);
 
   useEffect(() => {
     function handleResize() {

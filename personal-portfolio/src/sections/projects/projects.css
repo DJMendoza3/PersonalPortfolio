@@ -2,17 +2,23 @@
     width: min(1400px, 100%);
     margin: 0 auto;
     padding: 50px 0;
+    gap: 50px;
 }
 #projects h2 {
     font-size: 3rem;
     font-weight: 700;
     text-align: center;
 }
+#projects h3 {
+    font-size: 1.8rem;
+    font-weight: 700;
+}
 .project {
     gap: 40px;
 }
 .project-text {
     flex: 1;
+    justify-content: space-between;
 }
 .project img {
     border: solid 6px #2a2a2a;
@@ -20,4 +26,10 @@
 }
 .project-stack {
     justify-content: space-around;
+}
+.project-line {
+    width: 50%;
+    height: 2px;
+    background-color: #2a2a2a;
+    margin: 10px 0;
 }

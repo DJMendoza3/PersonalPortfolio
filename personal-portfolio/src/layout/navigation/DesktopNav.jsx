@@ -3,6 +3,7 @@ import { useEffect } from "react";
 import github_light from "assets/images/github-light.gif";
 import linkedin_light from "assets/images/linkedin-light.gif";
 import resume_light from "assets/images/resume-light.gif";
+import resume_pdf from "assets/misc/resume.pdf";
 
 export default function DesktopNav() {
 
@@ -46,9 +47,9 @@ export default function DesktopNav() {
                 <button onClick={() => scrollToComponent('about')}>Work</button>
             </nav>
             <div className="row">
-                <a href=""><img src={github_light} alt="" height='40px'/></a>
-                <a href=""><img src={linkedin_light} alt="" height='40px'/></a>
-                <a href=""><img src={resume_light} alt="" height='40px'/></a>
+                <a href="https://github.com/DJMendoza3" target="_blank" rel="noopener noreferrer"><img src={github_light} alt="" height='40px'/></a>
+                <a href="https://www.linkedin.com/in/daniel-mendoza-88336625b/" target="_blank" rel="noopener noreferrer"><img src={linkedin_light} alt="" height='40px'/></a>
+                <a href={resume_pdf} target="_blank" rel="noopener noreferrer"><img src={resume_light} alt="" height='40px'/></a>
             </div>
         </header>
     );

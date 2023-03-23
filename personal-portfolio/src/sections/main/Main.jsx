@@ -4,6 +4,7 @@ import banner_text from 'assets/images/banner-text.png';
 import linkedin from 'assets/images/linkedin.gif';
 import github from 'assets/images/github.gif';
 import resume from 'assets/images/resume.gif';
+import resume_pdf from 'assets/misc/resume.pdf';
 
 export default function Main() {
     return(
@@ -24,7 +25,7 @@ export default function Main() {
                         <img src={github} alt="" width='40px'/>
                         <span>GitHub</span>
                     </a>
-                    <a href='https://github.com/DJMendoza3' target="_blank" rel="noopener noreferrer" className="row">
+                    <a href={resume_pdf} target="_blank" rel="noopener noreferrer" className="row">
                         <img src={resume} alt="" width='40px'/>
                         <span>Resume</span>
                     </a>
