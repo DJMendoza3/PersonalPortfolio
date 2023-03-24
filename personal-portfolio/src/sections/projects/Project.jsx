@@ -1,6 +1,10 @@
 import { useState, useEffect } from "react";
 
+import github_img from "assets/images/github.gif";
+import external_link from "assets/images/external-link.gif";
+
 export default function Project({
+    id,
     title,
     description,
     image,
@@ -38,34 +42,35 @@ export default function Project({
 
     return(
         <div className='project row' style={{flexDirection: orientation === 'right' && 'row-reverse'}}>
-            <img id={`${title}-img`} src={display} alt={title} width='500px' height='500px'/>
+            <img id={`${title}-img`} className='project-img' src={display} alt={title} width='500px'/>
             <div className='project-text col'>
-                <div>
-                    <p>01</p>
+                <div className="project-text-header">
+                    <p>{id}</p>
                     <h3>{title}</h3>
                     <div className='project-links row'>
-                        <p>Github</p>
-                        <p>Live</p>    
+                        {github && <a href={github} target="_blank" rel="noopener noreferrer" className="row">Code <img src={github_img} alt="" width='25px'/></a> }
+                        {live && <a href={live} target="_blank" rel="noopener noreferrer" className="row">Live Site <img src={external_link} alt="" width='20px'/></a>   }
                     </div>
                     <div className="project-line" />
+                    <p className="project-description">{description}</p>
                 </div>
-                <p>{description}</p>
+               
                 <div className="project-stack row">
                     <div>
-                        <h4>frontent</h4>
+                        <h4>Frontent</h4>
                         {stack.frontend.map((tech, i) => <p key={i}>{tech}</p>)}
                     </div>
                     <div>
-                        <h4>backend</h4>
+                        <h4>Backend</h4>
                         {stack.backend.map((tech, i) => <p key={i}>{tech}</p>)}
                     </div>
                     <div>
-                        <h4>testing</h4>
+                        <h4>Testing</h4>
                         {stack.testing.map((tech, i) => <p key={i}>{tech}</p>)}
                     </div>
                     <div>
                         {stack.deployment && <>
-                        <h4>deployment</h4>
+                        <h4>Deployment</h4>
                         {stack.deployment.map((tech, i) => <p key={i}>{tech}</p>)}</>}
                     </div>
                 </div>

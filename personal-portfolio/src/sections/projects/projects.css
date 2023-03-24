@@ -1,17 +1,15 @@
 #projects {
-    width: min(1400px, 100%);
-    margin: 0 auto;
-    padding: 50px 0;
+    width: min(1400px, 90%);
+    margin: 50px auto;
     gap: 50px;
 }
 #projects h2 {
-    font-size: 3rem;
-    font-weight: 700;
     text-align: center;
 }
-#projects h3 {
-    font-size: 1.8rem;
-    font-weight: 700;
+.project a {
+    text-decoration: none;
+    color: #2a2a2a;
+    font-weight: 500;
 }
 .project {
     gap: 40px;
@@ -19,17 +17,38 @@
 .project-text {
     flex: 1;
     justify-content: space-between;
+    min-width: 400px;
 }
-.project img {
+.project-text-header {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+.project-description {
+    width: 90%;
+    margin: 0 auto;
+}
+.project-img {
     border: solid 6px #2a2a2a;
     border-radius: 10px;
+    margin: 0 auto;
+    width: min(500px, 100%);
+    aspect-ratio: 1/1;
 }
 .project-stack {
     justify-content: space-around;
+    width: 90%;
+    margin: 0 auto;
+}
+.project-stack > div {
+    flex: 1
 }
 .project-line {
     width: 50%;
     height: 2px;
     background-color: #2a2a2a;
     margin: 10px 0;
+}
+.project-links a {
+    gap: 10px;
 }

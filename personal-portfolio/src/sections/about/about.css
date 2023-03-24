@@ -1,7 +1,12 @@
 #about {
-    background-color: #2a2a2a;
-    width: min(1400px, 100%);
+    background: url(assets/images/textured-background.gif) no-repeat center center/cover;
+    width: min(1300px, 100%);
     margin: 0 auto;
+    padding: 50px 0;
     border-radius: 15px;
     color: #F1F0EA;
+}
+#about > * {
+    width: 90%;
+    margin: 0 auto;
 }

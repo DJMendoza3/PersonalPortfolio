@@ -11,10 +11,13 @@ import Contact from "sections/contact/Contact";
 import Footer from "layout/footer/Footer";
 
 export default function Container() {
-  const { setDimensions } = useContext(WindowContext);
+  const { dimensions, setDimensions } = useContext(WindowContext);
     const trail = document.getElementsByClassName('trail');
 
-    mouseEffect();
+  if (dimensions.width > 768) {
+      mouseEffect();
+  }
+
 
     useEffect(() => {
         
