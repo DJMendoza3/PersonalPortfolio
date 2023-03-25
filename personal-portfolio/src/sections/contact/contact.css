@@ -3,3 +3,15 @@
     margin: 50px auto;
 
 }
+#contact a {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+.contact-image {
+    background-color: #2a2a2a;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    padding: 10px;
+}
