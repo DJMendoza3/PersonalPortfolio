@@ -7,7 +7,7 @@ export default function About() {
 
     I am motivated to continuously improve my skills and learn new technologies that can enhance my development process. I am always looking for new challenges and opportunities to expand my knowledge and expertise.
 
-    When I'm not coding, I enjoy the great outdoors and can often be found exploring new trails or camping in the woods. Off-roading is a passion of mine, and I love tackling challenging terrain in my Jeep Wrangler. Being out in nature helps me to disconnect from technology and clear my mind, which in turn allows me to return to my work with renewed focus and creativity. Maintaining a healthy work-life balance is important to me, and spending time outdoors is an essential part of that balance.`;
+    When I'm not coding, I enjoy the great outdoors and can often be found exploring new trails or camping in the woods. Off-roading is a passion of mine, and I love tackling challenging terrain in my Jeep Wrangler. Being out in nature helps me to disconnect from technology and clear my mind, which in turn allows me to return to my work with renewed focus and creativity.`;
     return(
         <section id="about">
             <h2>Some More About Myself</h2>

@@ -12,7 +12,7 @@ import Footer from "layout/footer/Footer";
 
 export default function Container() {
   const { dimensions, setDimensions } = useContext(WindowContext);
-    const trail = document.getElementsByClassName('trail');
+    let trail = document.getElementsByClassName('trail');
 
   if (dimensions.width > 768) {
       mouseEffect();

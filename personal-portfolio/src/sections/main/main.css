@@ -1,9 +1,11 @@
 #main {
     height: 100vh;
+    flex-wrap: wrap;
+    align-items: center;
 }
 #main-text {
-    height: 100%;
-    max-width: 50%;
+    flex: 1;
+    min-width: 50%;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -24,17 +26,19 @@
     padding: 0;
 }
 #main-text-img {
+    flex: 1;
     height: 100%;
-    width: 30%;
     background-color: #2A2A2A;
     overflow: hidden;
 }
 #social-links {
     flex: 1;
+    align-self: flex-start;
     gap: 40px;
     align-items: center;
     padding-top: 100px;
     font-family: 'Recoleta';
+    min-width: 300px;
 }
 #social-links a {
     color: #2a2a2a;
@@ -52,6 +56,21 @@
 @media (max-width: 1300px) {
     h1 {
         font-size: 5rem;
+    }
+}
+@media (max-width: 600px) {
+    #main {
+        height: auto;
+        gap: 20px;
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
+    #social-links {
+        padding-top: 0;
+        flex-direction: row;
+        align-self: flex-start;
+        justify-content: center;
+        gap: 20px;
     }
 }
 @media (max-width: 450px) {

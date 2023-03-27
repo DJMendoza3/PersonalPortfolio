@@ -42,7 +42,7 @@ export default function Project({
 
     return(
         <div className='project row' style={{flexDirection: orientation === 'right' && 'row-reverse'}}>
-            <img id={`${title}-img`} className='project-img' src={display} alt={title} width='500px'/>
+            <img id={`${title}-img`} className='project-img' src={display} alt={title}/>
             <div className='project-text col'>
                 <div className="project-text-header">
                     <p>{id}</p>
@@ -52,7 +52,16 @@ export default function Project({
                         {live && <a href={live} target="_blank" rel="noopener noreferrer" className="row">Live Site <img src={external_link} alt="" width='20px'/></a>   }
                     </div>
                     <div className="project-line" />
-                    <p className="project-description">{description}</p>
+                    <div className="project-description">
+                      <h4>Overview:</h4>
+                      <p>{description.introduction}</p>
+                      <h4>Features:</h4>
+                      <ul>
+                        {description.features.map((feature, i) => <li key={i}>{feature}</li>)}
+                      </ul>
+                      <h4>Architecture:</h4>
+                      <p>{description.architecture}</p>
+                    </div>
                 </div>
                
                 <div className="project-stack row">

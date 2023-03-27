@@ -17,7 +17,7 @@
 .project-text {
     flex: 1;
     justify-content: space-between;
-    min-width: 400px;
+    min-width: min(400px, 100%);
 }
 .project-text-header {
     display: flex;
@@ -27,21 +27,20 @@
 .project-description {
     width: 90%;
     margin: 0 auto;
+    margin-bottom: 20px;
 }
 .project-img {
     border: solid 6px #2a2a2a;
     border-radius: 10px;
     margin: 0 auto;
     width: min(500px, 100%);
-    aspect-ratio: 1/1;
+    max-height: 500px;
 }
 .project-stack {
     justify-content: space-around;
     width: 90%;
     margin: 0 auto;
-}
-.project-stack > div {
-    flex: 1
+    gap: 20px;
 }
 .project-line {
     width: 50%;

@@ -21,18 +21,18 @@ export default function Main() {
                 <div id='main-text-img' className="col">
                     <img src={banner_text} alt="" />
                 </div>}
-                <div id='social-links' className="col">
+                <div id='social-links' className={dimensions.width > 600 ? 'col' : 'row'}>
                     <a href='https://www.linkedin.com/in/daniel-mendoza-88336625b/' target="_blank" rel="noopener noreferrer" className="row">
                         <img src={linkedin} alt="" width='40px' />
-                        <span>LinkedIn</span>
+                        {dimensions.width > 600 &&  <span>LinkedIn</span>}
                     </a>
                     <a href='https://github.com/DJMendoza3' target="_blank" rel="noopener noreferrer" className="row">
                         <img src={github} alt="" width='40px'/>
-                        <span>GitHub</span>
+                        {dimensions.width > 600 && <span>GitHub</span>}
                     </a>
                     <a href={resume_pdf} target="_blank" rel="noopener noreferrer" className="row">
                         <img src={resume} alt="" width='40px'/>
-                        <span>Resume</span>
+                        {dimensions.width > 600 && <span>Resume</span>}
                     </a>
                 </div>
         </section>
